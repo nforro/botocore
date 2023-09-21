@@ -26,3 +26,9 @@ jobs:
     branch: develop
     targets:
       - fedora-rawhide
+  - job: copr_build
+    trigger: commit
+    branch: develop
+    targets:
+      - fedora-rawhide
+    preserve_project: true
